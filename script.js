@@ -5,7 +5,7 @@ console.log('linked success');
 function formValidate() {
     let inputWeight = document.getElementById('input-weight').value;
     let inputHeight = document.getElementById('input-height').value;
-    let reset_input = 
+    
     console.log('isi inputan berat badan: ${inputWeight}');
     console.log('isi inputan berat badan: ${inputHeight}');
     if (inputWeight == '') {
