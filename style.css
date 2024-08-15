@@ -56,3 +56,41 @@ input {
 footer {
     text-align: center
 }
+
+@media only screen and (max-width: 480px) {
+    main {
+        flex-direction: column;
+    }
+}
+
+#hasil-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    padding: 12px;
+    /*border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    */
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  #hasil-title > span {
+    grid-column: 1;
+  }
+
+  #hasil-title > br {
+    grid-column: 2;
+  }
+
+  .hasil-akhir {
+    align-content: center
+  }
+  
+  #keterangan {
+    font-size: 14px;
+  }
+
+  

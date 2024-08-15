@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
 </head>
 <body>
     <header>
@@ -26,7 +27,7 @@
 
             <div>
                 <h3>Berat Badan (kg)</h3>
-                <input class="input-text" type="number">
+                <input class="input-text" type="number" id="input-weight">
             </div>
 
             <div>
@@ -36,12 +37,12 @@
 
             <div>
                 <h3>Tinggi Badan (cm)</h3>
-                <input class="input-text" type="number">
+                <input class="input-text" type="number" id="input-height">
             </div>
 
             <div class="form-btn-container">
-                <button class="button bg-cornsilk" onclick="formValidate()">Hitung BMI</button>
-                <button class="button bg-reset">Reset</button>
+                <button class="button bg-cornsilk" type="button" onclick="formValidate()">Hitung BMI</button>
+                <button class="button bg-reset" onclick="reset_input()">Reset</button>
             </div>
         </form>
 
@@ -59,7 +60,15 @@
             </p>
         </article>
     </aside>
-    <h2>Hasil</h2>
+    <form>
+    <h2 id="hasil-title"> Hasil</h2>
+    <br>
+    <article>
+    <p id="ket">Hasil perhitungan ini tidak menentukan kesehatan anda yang sebenarnya</p>
+    </article>
+    <div id="hasil"></div>
+    <div id="hasil-bmi"></div>
+    </form>
     <aside>
         <section></section>
     </aside>
@@ -67,7 +76,5 @@
 
     <footer></footer>
 </body>
-<script> src="index.js"
-   
-</script>
+
 </html>
